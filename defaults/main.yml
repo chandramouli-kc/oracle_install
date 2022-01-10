@@ -13,9 +13,9 @@ oracle_hostname: "{{ inventory_hostname }}"
 # location for temporary installation files
 oracle_tmp: /tmp/oracle
 
-oracle_base: /u01/app
+oracle_base: /opt/volume
 
-oracle_db_home: ora_1
+oracle_db_home: ora
 
 oracle_home: "{{ oracle_base }}/oracle/product/{{ oracle_version }}/{{ oracle_db_home }}"
 
@@ -40,7 +40,7 @@ oracle_dba_group:
 # FILE_SYSTEM_STORAGE | ASM_STORAGE
 oracle_storage_type: FILE_SYSTEM_STORAGE
 
-oracle_installer_path: /home/ansible/software
+oracle_installer_path: /home/ansible/Softwares
 
 # array  os images avaialbe
 item_images:
